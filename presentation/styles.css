@@ -348,3 +348,112 @@ svg { max-width: 100%; max-height: 100%; }
   font-weight: 700; font-size: 12pt; color: var(--am-indigo);
   white-space: nowrap;
 }
+
+
+/* Master Summary Table & Methodology Slides */
+.am-summary-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11pt;
+  margin-top: 10px;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(56, 28, 151, 0.05);
+}
+.am-summary-table th {
+  background: var(--am-indigo);
+  color: #ffffff;
+  padding: 10px 12px;
+  font-weight: 700;
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+.am-summary-table th:first-child {
+  text-align: left;
+}
+.am-summary-table th.th-total {
+  background: var(--am-red);
+}
+.am-summary-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #eef0f7;
+  border-right: 1px solid #f1f3f9;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 11pt;
+}
+.am-summary-table td:first-child {
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-color);
+  background: #fafafc;
+}
+.am-summary-table td.td-total {
+  font-weight: 700;
+  color: var(--am-red);
+  background: #fff5f6;
+}
+.am-summary-table tr:hover td {
+  background-color: #f8f7fd;
+}
+.am-summary-table tr.row-highlight td {
+  background-color: #f3effc;
+  font-weight: 600;
+}
+.am-summary-table tr.row-highlight td:first-child {
+  color: var(--am-indigo);
+}
+.am-meth-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 10px;
+  width: 100%;
+}
+.am-meth-card {
+  background: #ffffff;
+  border: 1px solid #e5e3ee;
+  border-radius: var(--box-radius);
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(56, 28, 151, 0.04);
+  display: flex;
+  flex-direction: column;
+}
+.am-meth-title {
+  font-size: 13pt;
+  font-weight: 700;
+  color: var(--am-indigo);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.am-meth-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 9pt;
+  font-weight: 700;
+  background: #EDE9F6;
+  color: var(--am-indigo);
+  margin-bottom: 8px;
+}
+.am-meth-rule {
+  font-size: 10.5pt;
+  color: #333;
+  line-height: 1.45;
+  margin-bottom: 8px;
+}
+.am-meth-rule strong {
+  color: var(--am-indigo);
+}
+.am-meth-source {
+  font-size: 9.5pt;
+  color: var(--muted-color);
+  background: #f8f7fc;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-top: auto;
+  border-left: 3px solid var(--am-purple);
+}
